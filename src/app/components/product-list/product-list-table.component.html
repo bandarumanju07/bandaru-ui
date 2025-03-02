@@ -1,0 +1,36 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Product ID</th>
+      <th>Product Name</th>
+      <th>Product desc</th>
+      <th>product Price</th>
+      <th>product Category</th>
+      <th>product Image</th>
+      <th>product Quantity</th>
+      <th>product Status</th>
+      <th>product Rating</th>
+      <th>product Reviews</th>
+      <th>product Discount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tempProduct of products">
+      <td>{{ tempProduct.productId }}</td>
+      <td>{{ tempProduct.productName }}</td>
+      <td>{{ tempProduct.productDescription }}</td>
+      <td>{{ tempProduct.productPrice }}</td>
+      <td>{{ tempProduct.productCategory }}</td>
+      <td>{{ tempProduct.productImage }}</td>
+      <td>{{ tempProduct.productQuantity }}</td>
+      <td>{{ tempProduct.productStatus }}</td>
+      <td>{{ tempProduct.productRating }}</td>
+      <td>{{ tempProduct.productReviews }}</td>
+      <td>{{ tempProduct.productDiscount }}</td>
+    </tr>
+  </tbody>
+
+  <!-- <p *ngFor="let tempProduct of products">
+    {{ tempProduct.productName }}
+  </p> -->
+</table>

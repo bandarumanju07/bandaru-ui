@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../service/product.service';
 import { Product } from '../../common/product';
-import { NgFor } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, CommonModule], // Ensure NgFor or CommonModule is included
   templateUrl: './product-list-table.component.html',
   //templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
