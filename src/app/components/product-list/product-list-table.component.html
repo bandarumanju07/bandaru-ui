@@ -16,17 +16,17 @@
   </thead>
   <tbody>
     <tr *ngFor="let tempProduct of products">
-      <td>{{ tempProduct.productId }}</td>
-      <td>{{ tempProduct.productName }}</td>
-      <td>{{ tempProduct.productDescription }}</td>
-      <td>{{ tempProduct.productPrice }}</td>
-      <td>{{ tempProduct.productCategory }}</td>
-      <td>{{ tempProduct.productImage }}</td>
-      <td>{{ tempProduct.productQuantity }}</td>
-      <td>{{ tempProduct.productStatus }}</td>
-      <td>{{ tempProduct.productRating }}</td>
-      <td>{{ tempProduct.productReviews }}</td>
-      <td>{{ tempProduct.productDiscount }}</td>
+      <td class="align-middle">{{ tempProduct.productId }}</td>
+      <td class="align-middle">{{ tempProduct.productName }}</td>
+      <td class="align-middle">{{ tempProduct.productDescription }}</td>
+      <td class="align-middle">{{ tempProduct.productPrice }}</td>
+      <td class="align-middle">{{ tempProduct.productCategory }}</td>
+      <td class="align-middle"><img src="{{ tempProduct.productImage }}" height="50" /></td>
+      <td class="align-middle">{{ tempProduct.productQuantity }}</td>
+      <td class="align-middle">{{ tempProduct.productStatus }}</td>
+      <td class="align-middle">{{ tempProduct.productRating }}</td>
+      <td class="align-middle">{{ tempProduct.productReviews }}</td>
+      <td class="align-middle">{{ tempProduct.productDiscount }}</td>
     </tr>
   </tbody>
 
